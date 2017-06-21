@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="K3n-fM-KRV" customClass="AreaCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K3n-fM-KRV" id="tK0-1S-lnv">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-me-PXg">
+                        <rect key="frame" x="10" y="7" width="30" height="30"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="OCR-Je-9Du"/>
+                            <constraint firstAttribute="height" constant="30" id="r9g-U7-ktC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vb-9X-aaY">
+                        <rect key="frame" x="48" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fHn-me-PXg" firstAttribute="centerY" secondItem="tK0-1S-lnv" secondAttribute="centerY" id="3GB-zt-iyL"/>
+                    <constraint firstItem="5vb-9X-aaY" firstAttribute="centerY" secondItem="tK0-1S-lnv" secondAttribute="centerY" id="5AU-hN-lDB"/>
+                    <constraint firstItem="5vb-9X-aaY" firstAttribute="leading" secondItem="fHn-me-PXg" secondAttribute="trailing" constant="8" id="Maw-lR-Xmi"/>
+                    <constraint firstItem="fHn-me-PXg" firstAttribute="leading" secondItem="tK0-1S-lnv" secondAttribute="leading" constant="10" id="TuF-86-GgC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkBoxImageView" destination="fHn-me-PXg" id="QJ4-O1-cUb"/>
+                <outlet property="constraintCheckBoxLeadingToSuperView" destination="TuF-86-GgC" id="dhJ-X0-gl4"/>
+                <outlet property="nameLabel" destination="5vb-9X-aaY" id="3rD-uY-b2L"/>
+            </connections>
+            <point key="canvasLocation" x="279" y="163"/>
+        </tableViewCell>
+    </objects>
+</document>
